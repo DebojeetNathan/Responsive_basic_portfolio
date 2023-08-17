@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdown">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="menu"><a href="javascript:void(0);" onclick="dropdown()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftside-col">
+                    <h1 class="large">Debojeet Nathan</h1>
+                    <h1 class="large"> A top-notch Frontend Developer</h1>
+                </div>
+                <form>
+                    <div class="leftside-col" >
+                        <h2>Username</h2>
+                        <input class="inputbox" type="text" placeholder=" Enter username....">
+                        <h2>Password</h2>
+                        <input class="inputbox" type="text" placeholder=" Enter password....">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="shift-videolink">
+                    <div class="video-container">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6AScfEUU_ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section2header">Welcome to my website</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="logo1.png" width = "130" height = "100">
+                    </div>
+                    <label>
+                        Chat with me 
+                    </label>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem sed risus ultrices ultrices id id sapien. Nulla sed lorem sed risus ul
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="logo1.png" width = "130" height = "100">
+                    </div>
+                    <label>
+                        Chat with me 
+                    </label>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem sed risus ultrices ultrices id id sapien. Nulla sed lorem sed risus ul
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="logo1.png" width = "130" height = "100">
+                    </div>
+                    <label>
+                        Chat with me 
+                    </label>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem sed risus ultrices ultrices id id sapien. Nulla sed lorem sed risus ul
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnmore">
+                    Meet me
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-7">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis perferendis eos, vel at dolor debitis natus culpa veritatis sint nostrum ullam quo quasi excepturi, cum magni similique quaerat accusamus fuga?</p>
+            </article>
+
+        </div>
+
+        <div class="col-5">
+            <div class="myimage">
+                <img src="me2.jpg"  width = "300" height = "200">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <footer class="footsy">
+            <div class="row">
+                <div class="col-3 mobilestack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About us</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+
+                    </ul>
+                </div>
+                <div class="col-3 mobilestack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About us</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+
+                    </ul>
+                </div>
+                <div class="col-3 mobilestack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About us</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+
+                    </ul>
+                </div>
+                <div class="col-3 mobilestack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About us</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    <script>
+        function dropdown(){
+            var x = document.getElementById("dropdown");
+            if(x.className==="topnav"){
+               x.className += " responsive";
+/*topnav ab topnav.responsive ban gyga hai*/
+            }
+            else{
+                x.className = "topnav";
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>

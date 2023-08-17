@@ -1,0 +1,303 @@
+
+nav,header,footer {
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+p{
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+article p{
+    font-size: 35px;
+    padding: 35px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/*navigation bar designinng*/
+
+nav{
+    width: 100%;
+    margin: 0;
+
+}
+
+nav ul{
+    background-color: rgb(233, 158, 158);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;    
+}
+
+ul.topnav li{
+     list-style: none;
+     float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+    
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase ;
+    color: brown;
+}
+
+ul.topnav li a:hover {
+    background-color: rgb(170, 76, 76);
+    color:black;
+}
+
+ul.topnav li.menu{
+    display: none;
+
+}
+
+/* custom styling*/
+
+#section-1-gradient{
+    background: rgb(8,4,66);
+    background: linear-gradient(90deg, rgb(92, 27, 27) 0%, rgba(198, 40, 40, 0.692) 35%, rgba(231, 94, 94, 0.372) 100%); 
+}
+div.logo{
+    width: 100%;
+}
+
+div.box{
+    background-color: whitesmoke;
+    box-shadow: 0 0 40px 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+    text-align: center;
+    margin: 20px;
+    padding: 30px 20px 35px 20px;
+    border-radius: 5px;
+}
+div.myimage img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15) ;
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: bisque;
+    background-color: grey;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+button.learnmore{
+    display: block;
+    margin: auto;
+}
+
+
+div.leftside-col{
+    margin-left: 30%;
+}
+
+div.shift-videolink{
+    margin-left: 15%;
+}
+
+h1.large{
+    color: antiquewhite;
+    font-size: 50px;
+    margin: 0;
+    line-height: 70px;
+
+}
+
+h1.section2header{
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    text-decoration: dashed;
+    color: rgb(222, 96, 23);
+}
+
+form h2 {
+    color: #fff;
+}
+
+input[type=text]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+footer.footsy{
+    background-color: grey;
+    padding-left: 10%;
+
+}
+ footer.footsy h1{
+    color: bisque;
+    font-size: 35px;
+ }
+
+ footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+ }
+ footer.footsy ul li{
+    color: bisque;
+    line-height: 1.5;
+    font-size: 20px;
+
+ }
+
+
+
+
+
+/*mobile view styling */
+@media screen and (max-width: 680px) {
+ul.topnav li:not(:nth-child(1)) {
+    display: none;
+}
+
+
+ul.topnav li.menu{
+    display: block;
+    float: right;
+}
+
+ul.topnav.responsive li.menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+ul.topnav.responsive{
+    position: relative;
+}
+
+ul.topnav.responsive li{
+    float: none;
+    display: inline;
+}
+
+ul.topnav.responsive li a{
+    display: block;
+    text-align: left ;
+ } 
+ .col-6, .col-4,.col-5, .col-7{
+    width:100%;
+    margin: 0;
+ }
+
+ div.mobilestack{
+    width: 50%;
+    display: block;
+ }
+
+ article p{
+    font-size: 25px;
+ }
+
+ div.box{
+    padding: 5px;
+    display: block;
+ }
+
+ /*div.myimage img{
+    width: 100%;
+    
+ }
+
+ div.myimage{
+    margin: 10px;
+ }
+
+ */
+ 
+ div.leftside-col,div.shift-videolink{
+    margin: 15%;
+
+ }
+
+ input[type="text"]{
+    width: 300px;
+    }
+
+    .video-container iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
